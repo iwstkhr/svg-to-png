@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "@iwstkhr/svg-to-png",
+  "version": "0.0.1",
+  "description": "A library to convert svg to png (base64)",
+  "author": "Iwasa Takahiro",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/iwstkhr/svg-to-png#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwstkhr/svg-to-png.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iwstkhr/svg-to-png/issues"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "export NODE_ENV=production && tsc && webpack",
+    "test": "karma start karma.conf.js"
+  },
+  "dependencies": {
+    "rxjs": "^7.5.5"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^4.0.2",
+    "@types/karma-jasmine": "^4.0.2",
+    "@types/karma-jasmine-html-reporter": "^1.7.0",
+    "@webpack-cli/generators": "^2.4.2",
+    "html-webpack-plugin": "^5.5.0",
+    "jasmine": "^4.0.2",
+    "karma": "^6.3.17",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-coverage": "^2.2.0",
+    "karma-jasmine": "^4.0.2",
+    "karma-jasmine-html-reporter": "^1.7.0",
+    "karma-typescript": "^5.5.3",
+    "ts-loader": "^9.2.8",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
